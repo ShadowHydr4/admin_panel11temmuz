@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+  <title>İsmek Online Sınav</title>
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Page level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+</head>
+
+<body class="fixed-nav sticky-footer bg-light" id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav" style="background-color: #0059A9 !important;">
+    <a class="navbar-brand" href="index.html" style="color: white;">Sınav İsmek</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22" style="color: white;"></path></svg>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Anasayfa">
+          <a class="nav-link" href="index.html">
+            <i class="fa fa-fw fa-home"></i>
+            <span class="nav-link-text">Anasayfa</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Kullanıcı İşlemleri">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-users"></i>
+            <span class="nav-link-text">Kullanıcı İşlemleri</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseMulti">
+            <li>
+              <a href="kullanici_ekle.html">Kullanıcı Ekleme</a>
+            </li>
+            <li>
+              <a href="kullanici_liste.html">Kullanıcı Listeleme</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Branş İşlemleri">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-clipboard"></i>
+            <span class="nav-link-text">Branş İşlemleri</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseMulti2">
+            <li>
+              <a href="brans_olustur.html">Branş Oluştur</a>
+            </li>
+            <li>
+              <a href="kullanici_liste.html">Branş Listeleme</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Sınav İşlemleri">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti3" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-pencil"></i>
+            <span class="nav-link-text">Sınav İşlemleri</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseMulti3">
+            <li>
+              <a href="sinav_yonetimi.html">Sınav Yönetimi</a>
+            </li>
+            <li>
+              <a href="sinav_olustur.html">Sınav Oluştur</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+          <a class="nav-link" href="#">
+            <i class="fa fa-fw fa-link"></i>
+            <span class="nav-link-text">Link</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav sidenav-toggler">
+        <li class="nav-item">
+          <a class="nav-link text-center" id="sidenavToggler">
+            <i class="fa fa-fw fa-angle-left"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+         <div class="dropdown show">
+            <a class="btn btn-primary dropdown-toggle" href="#" role="button"  id="dropmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" background-color: #0059A9 !important; border-color: #0059A9 !important;">
+              Sibel Özden
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#"><i class="fa fa-fw fa-user"></i> Hesabım</a>
+              <a class="dropdown-item" href="#"><i class="fa fa-fw fa-cog"></i> Ayarlar</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="login.html"><i class="fa fa-fw fa-sign-out"></i> Çıkış</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Content -->
+  <div class="content-wrapper" style="padding-top: 0px !important;">
+      <!-- -->
+  <div class="card mb-3">
+    <div class="card-header">
+      <i class="fa fa-file"></i> Mülakat Soru Güncelle</div>
+  </div>
+<!-- Form -->
+<div class="container mb-4">
+  <div class="row">
+    <div class="col-md-7 mx-auto form-area">    
+      <form class="my-4">
+        <div class="form-group">
+          <label for="">Soru</label>
+          <textarea cols="80" rows="10" id="content" name="content"></textarea>
+        </div>
+      
+        <button type="submit" class="btn btn-primary">Kaydet</button>
+      </form>
+    </div>
+  </div>
+</div>      
+<!-- Form End -->
+  </div>
+    <!-- -->
+    
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Copyright © Your Website 2018</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/chart/Chart.min.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+    <!-- Custom scripts for this page-->
+    <script src="js/sb-admin-datatables.min.js"></script>
+    <script src="js/sb-admin-charts.min.js"></script>
+    <script type="text/javascript">
+    	CKEDITOR.replace('content');
+    </script>
+
+</body>
+
+</html>
