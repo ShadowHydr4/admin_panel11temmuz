@@ -3,9 +3,10 @@
 
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -18,6 +19,8 @@
   <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
+
+  <script src="ckeditor/ckeditor.js" type="text/javascript"></script>
 </head>
 
 <body class="fixed-nav sticky-footer bg-light" id="page-top">
@@ -131,46 +134,19 @@
       <!-- -->
   <div class="card mb-3">
     <div class="card-header">
-      <i class="fa fa-file"></i> Kullanıcı Rol Atama</div>
+      <i class="fa fa-file"></i> Mülakat Soru Güncelle</div>
   </div>
 <!-- Form -->
 <div class="container mb-4">
   <div class="row">
     <div class="col-md-7 mx-auto form-area">    
       <form class="my-4">
-        <div class="form-group">        
-              <input type="text" class="form-control" id="" aria-describedby="emailHelp" placeholder="Tc No...">  
-        </div>
         <div class="form-group">
-        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Adı...">
+          <label for="">Soru</label>
+          <textarea cols="80" rows="10" id="content" name="content"></textarea>
         </div>
-        <div class="form-group">
-          <input type="text" class="form-control" id="" placeholder="Soyadı...">
-        </div>
-         <div class="form-group">
-           <label for="">Rol Atama</label>
-           <div class="row">
-              <div class="col-md-5">
-                <div class="list-group" id="list1">
-                <a href="#" class="list-group-item active">Kullanıcı Rolu<input title="toggle all" type="checkbox" class="all pull-right"></a>
-                <a href="#" class="list-group-item">Admin <input type="checkbox" class="pull-right"></a>
-                </div>
-              </div>
-              <div class="col-md-2 v-center">
-              <button title="Send to list 2" class="btn btn-default center-block add"><i class="fa fa-chevron-right"></i></button>
-                  <button title="Send to list 1" class="btn btn-default center-block remove"><i class="fa fa-chevron-left"></i></button>
-              </div>
-              <div class="col-md-5">
-                <div class="list-group" id="list2">
-                  <a href="#" class="list-group-item active">Atanacak Rol<input title="toggle all" type="checkbox" class="all pull-right"></a>
-                  <a href="#" class="list-group-item">Öğrenci <input type="checkbox" class="pull-right"></a>
-                  <a href="#" class="list-group-item">Uzman <input type="checkbox" class="pull-right"></a>
-                  <a href="#" class="list-group-item">Öğretmen <input type="checkbox" class="pull-right"></a>
-                </div>
-              </div>
-            </div>
-         </div>
-         <a href="#" id="add_roler" class="btn btn-success">Kullanıcı Kaydet</a>
+      
+        <button type="submit" class="btn btn-warning">Güncelle</button>
       </form>
     </div>
   </div>
@@ -222,19 +198,10 @@
     <!-- Custom scripts for this page-->
     <script src="js/sb-admin-datatables.min.js"></script>
     <script src="js/sb-admin-charts.min.js"></script>
-    <script src="js/pickList.js"></script>
-    <script>
-       var val = {
-            1: {id: 1, text: 'Admin'},
-            2: {id: 2, text: 'Uz. Öğretmen'},
-            3: {id: 3, text: 'Öğretmen'},
-            4: {id: 4, text: 'Öğrenci'}
-         };
-         var pick = $("#pickList").pickList({data: val});
-         $("#getSelected").click(function () {
-            console.log(pick.getValues());
-         });
+    <script type="text/javascript">
+    	CKEDITOR.replace('content');
     </script>
+
 </body>
 
 </html>

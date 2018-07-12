@@ -125,60 +125,36 @@
       </ul>
     </div>
   </nav>
-  
-  <!-- Content -->
+  <!-- Content-->
   <div class="content-wrapper" style="padding-top: 0px !important;">
-      <!-- -->
-  <div class="card mb-3">
-    <div class="card-header">
-      <i class="fa fa-file"></i> Kullanıcı Rol Atama</div>
-  </div>
-<!-- Form -->
-<div class="container mb-4">
-  <div class="row">
-    <div class="col-md-7 mx-auto form-area">    
-      <form class="my-4">
-        <div class="form-group">        
-              <input type="text" class="form-control" id="" aria-describedby="emailHelp" placeholder="Tc No...">  
+      <!-- Content-->
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-list"></i> Mülakat Soru Listesi</div>
+        <div class="card-body tabloOrtala">
+          <div class="table-responsive">
+            <table class="table table-bordered" style="margin: auto;" id="dataTable" width="75%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th data-sortable="false">Soru</th>
+                  <th data-sortable="false">Güncelle</th>
+                  <th data-sortable="false">Sil</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>İsmek hakkında neler düşünüyorsunuz?</td>
+                  <td><a href="mulakat_soru_guncelle.html" class="btn btn-success">Güncelle</a></td>
+                  <td><a href="" class="btn btn-danger">Sil</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-        <div class="form-group">
-        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Adı...">
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control" id="" placeholder="Soyadı...">
-        </div>
-         <div class="form-group">
-           <label for="">Rol Atama</label>
-           <div class="row">
-              <div class="col-md-5">
-                <div class="list-group" id="list1">
-                <a href="#" class="list-group-item active">Kullanıcı Rolu<input title="toggle all" type="checkbox" class="all pull-right"></a>
-                <a href="#" class="list-group-item">Admin <input type="checkbox" class="pull-right"></a>
-                </div>
-              </div>
-              <div class="col-md-2 v-center">
-              <button title="Send to list 2" class="btn btn-default center-block add"><i class="fa fa-chevron-right"></i></button>
-                  <button title="Send to list 1" class="btn btn-default center-block remove"><i class="fa fa-chevron-left"></i></button>
-              </div>
-              <div class="col-md-5">
-                <div class="list-group" id="list2">
-                  <a href="#" class="list-group-item active">Atanacak Rol<input title="toggle all" type="checkbox" class="all pull-right"></a>
-                  <a href="#" class="list-group-item">Öğrenci <input type="checkbox" class="pull-right"></a>
-                  <a href="#" class="list-group-item">Uzman <input type="checkbox" class="pull-right"></a>
-                  <a href="#" class="list-group-item">Öğretmen <input type="checkbox" class="pull-right"></a>
-                </div>
-              </div>
-            </div>
-         </div>
-         <a href="#" id="add_roler" class="btn btn-success">Kullanıcı Kaydet</a>
-      </form>
+      </div>
     </div>
-  </div>
-</div>      
-<!-- Form End -->
-  </div>
-    <!-- -->
-    
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
@@ -222,19 +198,7 @@
     <!-- Custom scripts for this page-->
     <script src="js/sb-admin-datatables.min.js"></script>
     <script src="js/sb-admin-charts.min.js"></script>
-    <script src="js/pickList.js"></script>
-    <script>
-       var val = {
-            1: {id: 1, text: 'Admin'},
-            2: {id: 2, text: 'Uz. Öğretmen'},
-            3: {id: 3, text: 'Öğretmen'},
-            4: {id: 4, text: 'Öğrenci'}
-         };
-         var pick = $("#pickList").pickList({data: val});
-         $("#getSelected").click(function () {
-            console.log(pick.getValues());
-         });
-    </script>
+
 </body>
 
 </html>
