@@ -420,6 +420,7 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
   #mainNav.navbar-light .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level {
     background: #f8f9fa;
   }
+  
 }
 
 .card-body-icon {
@@ -546,4 +547,35 @@ footer.sticky-footer {
   background:#666 !important;
   border:1px solid #666 !important;
   color:#fff !important
+}
+
+@media(min-width: 1100px){
+    .saga-yasla{
+        margin-left: 80%;
+  }
+}
+
+@media(max-width: 1100px){
+  .nav-link-text,  #exampleAccordion>li>a>.fa, #collapseMulti>li>a{
+  color:#f8f9fa !important;
+ }
+
+ .nav-link-text,  #exampleAccordion>li>a>.fa, #collapseMulti1>li>a{
+  color:#f8f9fa !important;
+ }
+
+ .nav-link-text,  #exampleAccordion>li>a>.fa, #collapseMulti2>li>a{
+  color:#f8f9fa !important;
+ }
+
+ .nav-link-text,  #exampleAccordion>li>a>.fa, #collapseMulti3>li>a{
+  color:#f8f9fa !important;
+ }
+
+ .nav-link-text,  #exampleAccordion>li>a>.fa, #collapseMulti4>li>a{
+  color:#f8f9fa !important;
+ }
+ #mainNav.navbar-light .navbar-collapse .navbar-sidenav .nav-link-collapse:after {
+  color:#f8f9fa !important;
+ }
 }

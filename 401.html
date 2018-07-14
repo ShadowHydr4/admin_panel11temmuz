@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>İsmek Online Sınav</title>
+  <title>401</title>
   <!-- Bootstrap core CSS-->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
@@ -18,24 +18,15 @@
   <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
+  <!-- 404 css -->
+  <link href="css/401.css" rel="stylesheet">
 </head>
 
 <body class="fixed-nav sticky-footer bg-light" id="page-top">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav" style="background-color: #0059A9 !important;">
     <a class="navbar-brand" href="index.html" style="color: white;">Sınav İsmek</a>
-    <div class="dropdown show saga-yasla">
-      <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" background-color: #0059A9 !important; border-color: #0059A9 !important; float: right">
-        Sibel Özden
-      </a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#"><i class="fa fa-fw fa-user"></i> Hesabım</a>
-        <a class="dropdown-item" href="#"><i class="fa fa-fw fa-cog"></i> Ayarlar</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal" href="login.html"><i class="fa fa-fw fa-sign-out"></i> Çıkış</a>
-      </div>
-    </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22" style="color: white;"></path></svg>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -70,7 +61,7 @@
               <a href="brans_olustur.html">Branş Oluştur</a>
             </li>
             <li>
-              <a href="brans_liste.html">Branş Listeleme</a>
+              <a href="kullanici_liste.html">Branş Listeleme</a>
             </li>
           </ul>
         </li>
@@ -119,79 +110,43 @@
           </a>
         </li>
       </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+         <div class="dropdown show">
+            <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" background-color: #0059A9 !important; border-color: #0059A9 !important;">
+              Sibel Özden
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#"><i class="fa fa-fw fa-user"></i> Hesabım</a>
+              <a class="dropdown-item" href="#"><i class="fa fa-fw fa-cog"></i> Ayarlar</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal" href="login.html"><i class="fa fa-fw fa-sign-out"></i> Çıkış</a>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
   </nav>
   
-  <!-- Content-->
-  <div class="content-wrapper" style="padding-top: 0px !important;">
-      <!-- Content-->
-      <div class="card mb-3">
-        <div class="card-header">
-          <i class="fa fa-list"></i> Soru Ekleme</div>
-			<div class="container">
-            	<div class="row">
-                	<div class="col-md-9 mx-auto form-area">
-                          <form>
-                            <div class="form-group">
-                              <label>Branş</label>
-                              <select class="form-control">
-                                <option>Spring</option>
-                                <option>.Net</option>
-                              </select>
-                            <div class="form-group">
-                              <label>Adı</label>
-                              <input type="text" class="form-control" id="exampleInputEmail1">
-                            </div>
-                            <div class="form-group">
-                              <label>Soru</label>
-                               <textarea cols="80" rows="10" id="content" name="content"> 
-                            &lt;h1&gt;Article Title&lt;/h1&gt;
-                            &lt;p&gt;Here's some sample text&lt;/p&gt;
-                          </textarea>
-                         
-                            </div>
-                            <div class="form-group">
-                              <label for="exampleInputEmail1">Seçenek Sayısı</label>
-                              <input type="text" class="form-control" id="">
-                            </div>
-                            <div class="form-group">
-                              <label for="exampleInputEmail1">Cevap</label>
-                              <input type="text" class="form-control" id="">
-                            </div>
-                            <div class="form-group">
-                              <label for="exampleInputPassword1">Soru Puan</label>
-                              <input type="text" class="form-control" id="">
-                            </div>
-                             <div class="form-group">
-                              <label for="">Zorluk Seviyesi</label>
-                              <select class="form-control">
-                                <option>Orta</option>
-                                <option>Zor</option>
-                              </select>
-                            </div>
-                             <div class="form-group row">
-                        <div class="col-sm-2">Aktif Mi</div>
-                        <div class="col-sm-10">
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck1">
-                            <label class="form-check-label" for="gridCheck1">
-                              Evet
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                            <button type="submit" class="btn btn-primary"> Kaydet</button>
-                          
-                        </div></form>
-                    </div>
-                </div>
-                
-            </div>	      
-
+  <!-- Content -->
+  <div class="error-page">
+      <div>
+        <!--h1(data-h1='400') 400-->
+        <!--p(data-p='BAD REQUEST') BAD REQUEST-->
+        <!--h1(data-h1='401') 401-->
+        <!--p(data-p='UNAUTHORIZED') UNAUTHORIZED-->
+        <!--h1(data-h1='403') 403-->
+        <!--p(data-p='FORBIDDEN') FORBIDDEN-->   
+        <h1 data-h1="401">401</h1>
+        <p data-p="UNAUTHORIZED">UNAUTHORIZED </p>
+        <!--h1(data-h1='500') 500-->
+        <!--p(data-p='SERVER ERROR') SERVER ERROR-->
       </div>
     </div>
-    <!-- /.container-fluid-->
-    <!-- /.content-wrapper-->
+    <div id="particles-js"></div>
+  <!-- Content -->
+  
+    
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
@@ -204,7 +159,7 @@
       <i class="fa fa-angle-up"></i>
     </a>
     <!-- Logout Modal-->
-   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -235,7 +190,9 @@
     <!-- Custom scripts for this page-->
     <script src="js/sb-admin-datatables.min.js"></script>
     <script src="js/sb-admin-charts.min.js"></script>
- 
+    <!-- 404 js -->
+    <script src="js/401.js"></script>
+
 </body>
 
 </html>

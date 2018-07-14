@@ -10,7 +10,7 @@ $('.add').click(function(){
       });
     }
     else {
-      alert("Choose an item from list 1");
+      alert("Bir kullanıcı rolü seçiniz");
     }
 });
 

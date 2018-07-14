@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -18,30 +17,20 @@
   <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
+  <link rel="stylesheet" href="deneme.css">
 </head>
 
 <body class="fixed-nav sticky-footer bg-light" id="page-top">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav" style="background-color: #0059A9 !important;">
     <a class="navbar-brand" href="index.html" style="color: white;">Sınav İsmek</a>
-    <div class="dropdown show saga-yasla">
-      <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" background-color: #0059A9 !important; border-color: #0059A9 !important; float: right">
-        Sibel Özden
-      </a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#"><i class="fa fa-fw fa-user"></i> Hesabım</a>
-        <a class="dropdown-item" href="#"><i class="fa fa-fw fa-cog"></i> Ayarlar</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal" href="login.html"><i class="fa fa-fw fa-sign-out"></i> Çıkış</a>
-      </div>
-    </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22" style="color: white;"></path></svg>
     </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
+    <div class="collapse navbar-collapse"  id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Anasayfa">
-          <a class="nav-link" href="index.html">
+          <a class="nav-link" href="index.html" >
             <i class="fa fa-fw fa-home"></i>
             <span class="nav-link-text">Anasayfa</span>
           </a>
@@ -70,7 +59,7 @@
               <a href="brans_olustur.html">Branş Oluştur</a>
             </li>
             <li>
-              <a href="brans_liste.html">Branş Listeleme</a>
+              <a href="kullanici_liste.html">Branş Listeleme</a>
             </li>
           </ul>
         </li>
@@ -119,6 +108,21 @@
           </a>
         </li>
       </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+         <div class="dropdown show">
+            <a class="btn btn-primary dropdown-toggle" href="#" role="button"  id="dropmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" background-color: #0059A9 !important; border-color: #0059A9 !important;">
+              Sibel Özden
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#"><i class="fa fa-fw fa-user"></i> Hesabım</a>
+              <a class="dropdown-item" href="#"><i class="fa fa-fw fa-cog"></i> Ayarlar</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="login.html"><i class="fa fa-fw fa-sign-out"></i> Çıkış</a>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
   </nav>
   
@@ -130,19 +134,49 @@
         <i class="fa fa-file"></i> Sınav Oluştur</div>
     </div>
 
-    <div class="container">
-  
-      <ul class="tab-menu">
-        <li class="current"><a href="#tab1">Sınav Oluştur</a></li>
-        <li><a href="#tab2">Rastgele Soru Çek</a></li>
-        <li><a href="#tab3">Soru Onay</a></li>
-        <li><a href="#tab4">Sınav Onay</a></li>
-        <li><a href="#tab5">Sınav Çıktısı</a></li>
-      </ul>
-
-      <div class="tab-container">
-        <div id="tab1" class="tab-content">
-          <div class="container mb-4">
+    
+   <section class="design-process-s" id="process-tab">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 mx-auto"> 
+        <!-- design process steps--> 
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs process-model more-icon-preocess" role="tablist">
+          <li role="presentation" class="active">
+          			<a href="#sinavolustur" aria-controls="sinavolustur" role="tab" data-toggle="tab">
+                    		<i class="fa fa-search" aria-hidden="true"></i>
+            <p>Sınav Oluştur</p>
+            </a></li>
+          <li role="presentation" class="">
+         			 <a href="#rsorucek" aria-controls="rsorucek" role="tab" data-toggle="tab">
+                     		<i class="fa fa-send-o" aria-hidden="true"></i>
+            <p>Rastgele Soru Çek</p>
+            </a></li>
+          <li role="presentation" class="disabled">
+          			<a href="#optimization" aria-controls="optimization" role="tab" data-toggle="tab">
+                    	<i class="fa fa-qrcode" aria-hidden="true"></i>
+                    <p>Optimization</p>
+                    </a>
+            </li>
+          <li role="presentation" class="disabled">
+         			 <a href="#content" aria-controls="content" role="tab" data-toggle="tab">	
+                     		<i class="fa fa-newspaper-o" aria-hidden="true"></i>
+           		 <p>Content</p>
+            			</a>
+           </li>
+          <li role="presentation" class="disabled">
+          				<a href="#reporting" aria-controls="reporting" role="tab" data-toggle="tab">																													                            <i class="fa fa-clipboard" aria-hidden="true"></i>
+                            <p>Reporting</p>
+                            </a>
+          </li>
+        </ul>
+        <!-- end design process steps--> 
+        <!-- Tab panes -->
+        <div class="tabb-content mb-5">
+          <div role="tabpanel" class="tabb-pane active" id="sinavolustur">
+            <div class="design-process-content">
+              <h3 class="semi-bold">Sınav Oluştur</h3>
+      <div class="container">
             <div class="row">
               <div class="col-md-7 mx-auto form-area">    
                 <form class="my-4">
@@ -165,117 +199,70 @@
                       <option>Bayan</option>
                     </select>
                   </div>
-                  <button type="submit" class="btn btn-primary">İleri</button>
+                  
+                  <ul class="nav nav-tabs process-model more-icon-preocess" role="tablist">
+                      <li role="presentation" class="active">
+                               <a href="#rsorucek" aria-controls="rsorucek" role="tab" data-toggle="tab">
+                               <button type="submit" class="btn btn-primary">İleri</button>
+                
+                            </a>
+                     </li>
+                  </ul>
                 </form>
               </div>
             </div>
           </div> 
-        </div>
-        <div id="tab2" class="tab-content">
-          <div class="container mb-4">
-            <div class="row">
-              <div class="col-md-7 mx-auto form-area">    
-                <form class="my-4">
-                  <div class="form-group">        
-                    <label for="">TC.No</label>
-                        <input type="text" class="form-control" id="" aria-describedby="emailHelp">
-                        <small id="emailHelp" class="form-text text-muted">(000-000-000-00) Tc Kimlik no</small>        
-                  </div>
-                  <div class="form-group">
-                    <label for="">Adı</label><input type="text" class="form-control" id="exampleInputEmail1">
-                  </div>
-                  <div class="form-group">
-                    <label for="" class="">Soyadı</label>
-                    <input type="text" class="form-control" id="">
-                  </div>
-                   <div class="form-group">
-                    <label for="">Cinsiyet</label>
-                    <select class="form-control">
-                      <option>Bay</option>
-                      <option>Bayan</option>
-                    </select>
-                  </div>
-                  <button type="submit" class="btn btn-primary">İleri</button>
-                </form>
+       
+             </div>
+          </div>
+          <div role="tabpanel" class="tabb-pane" id="rsorucek">
+            <div class="design-process-content">
+              <h3 class="semi-bold">Rastgele Soru</h3>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincid unt ut laoreet dolore magna aliquam erat volutpat</p>
+              <ul class="nav nav-tabs process-model more-icon-preocess" role="tablist">
+                      <li role="presentation">
+                               <a href="#sinavolustur" aria-controls="sinavolustur" role="tab" data-toggle="tab">
+                               <button type="submit" class="btn btn-primary">Geri</button>
+                
+                            </a>  </li>
+                  </ul>
+                  
+                    <ul class="nav nav-tabs process-model more-icon-preocess" role="tablist">
+                      <li role="presentation">
+                               <a href="#optimization" aria-controls="optimization" role="tab" data-toggle="tab">
+                               <button type="submit" class="btn btn-primary">İleri</button>
+                
+                            </a>  </li>
+                  </ul>
               </div>
-            </div>
-          </div> 
-        </div>
-        <div id="tab3" class="tab-content">
-          <div class="container mb-4">
-            <div class="row">
-              <div class="col-md-7 mx-auto form-area">    
-                <form class="my-4">
-                  <div class="form-group">        
-                    <label for="">TC.No</label>
-                        <input type="text" class="form-control" id="" aria-describedby="emailHelp">
-                        <small id="emailHelp" class="form-text text-muted">(000-000-000-00) Tc Kimlik no</small>        
-                  </div>
-                  <div class="form-group">
-                    <label for="">Adı</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1">
-                  </div>
-                   <div class="form-group">
-                    <label for="">Cinsiyet</label>
-                    <select class="form-control">
-                      <option>Bay</option>
-                      <option>Bayan</option>
-                    </select>
-                  </div>
-                  <button type="submit" class="btn btn-primary">İleri</button>
-                </form>
+          </div>
+          <div role="tabpanel" class="tabb-pane" id="optimization">
+            <div class="design-process-content">
+              <h3 class="semi-bold">Optimization</h3>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincid unt ut laoreet dolore magna aliquam erat volutpat</p>
+               </div>
+          </div>
+          <div role="tabpanel" class="tabb-pane" id="content">
+            <div class="design-process-content">
+              <h3 class="semi-bold">Content</h3>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincid unt ut laoreet dolore magna aliquam erat volutpat</p>              
               </div>
-            </div>
-          </div> 
-        </div>
-        <div id="tab4" class="tab-content">
-          <div class="container mb-4">
-            <div class="row">
-              <div class="col-md-7 mx-auto form-area">    
-                <form class="my-4">
-                  <div class="form-group">        
-                    <label for="">TC.No</label>
-                        <input type="text" class="form-control" id="" aria-describedby="emailHelp">
-                        <small id="emailHelp" class="form-text text-muted">(000-000-000-00) Tc Kimlik no</small>        
-                  </div>
-                  <div class="form-group">
-                    <label for="">Adı</label><input type="text" class="form-control" id="exampleInputEmail1">
-                  </div>
-                  <div class="form-group">
-                    <label for="" class="">Soyadı</label>
-                    <input type="text" class="form-control" id="">
-                  </div>                  
-                   <div class="form-group">
-                    <label for="">Cinsiyet</label>
-                    <select class="form-control">
-                      <option>Bay</option>
-                      <option>Bayan</option>
-                    </select>
-                  </div>
-                  <button type="submit" class="btn btn-primary">İleri</button>
-                </form>
-              </div>
-            </div>
-          </div> 
-        </div>
-        <div id="tab5" class="tab-content">
-          <div class="container mb-4">
-            <div class="row">
-              <div class="col-md-7 mx-auto form-area">    
-                <form class="my-4">
-                  <div class="form-group">
-                    <label for="">Adı</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1">
-                  </div>
-                  <button type="submit" class="btn btn-primary">Bitir </button>
-                </form>
-              </div>
-            </div>
-          </div> 
+          </div>
+          <div role="tabpanel" class="tabb-pane" id="reporting">
+            <div class="design-process-content">
+              <h3>Reporting</h3>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincid unt ut laoreet dolore magna aliquam erat volutpat. </p>
+          </div>
         </div>
       </div>
-      
     </div>
+  </div>
+  </div>
+</section>
+
+      
+      
+   
   </div>
   <!-- Form -->
 
@@ -299,15 +286,15 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Çıkış yapmak mı istiyorsunuz?</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
             <button class="close" type="button" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button>
           </div>
-          <div class="modal-body">Mevcut oturumunuzu sonlandırmak için "Çıkış" seçeneğini seçiniz.</div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
           <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-dismiss="modal">Vazgeç</button>
-            <a class="btn btn-primary" href="login.html">Çıkış</a>
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
           </div>
         </div>
       </div>
@@ -326,18 +313,6 @@
     <!-- Custom scripts for this page-->
     <script src="js/sb-admin-datatables.min.js"></script>
     <script src="js/sb-admin-charts.min.js"></script>
-    <script>
-      $(document).ready(function() {
-        $(".tab-menu a").click(function(event) {
-          event.preventDefault();
-          $(this).parent().addClass("current");
-          $(this).parent().siblings().removeClass("current");
-          var tab = $(this).attr("href");
-          $(".tab-content").not(tab).css("display", "none");
-          $(tab).fadeIn();
-        });
-      });
-    </script>
-
-</body>
+    <script src="deneme.js"></script>
+ </body>
 </html>

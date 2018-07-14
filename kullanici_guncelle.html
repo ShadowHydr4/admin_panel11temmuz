@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -24,7 +24,18 @@
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav" style="background-color: #0059A9 !important;">
     <a class="navbar-brand" href="index.html" style="color: white;">Sınav İsmek</a>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="dropdown show saga-yasla">
+      <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" background-color: #0059A9 !important; border-color: #0059A9 !important; float: right">
+        Sibel Özden
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#"><i class="fa fa-fw fa-user"></i> Hesabım</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-fw fa-cog"></i> Ayarlar</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal" href="login.html"><i class="fa fa-fw fa-sign-out"></i> Çıkış</a>
+      </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22" style="color: white;"></path></svg>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -59,7 +70,7 @@
               <a href="brans_olustur.html">Branş Oluştur</a>
             </li>
             <li>
-              <a href="kullanici_liste.html">Branş Listeleme</a>
+              <a href="brans_liste.html">Branş Listeleme</a>
             </li>
           </ul>
         </li>
@@ -108,24 +119,8 @@
           </a>
         </li>
       </ul>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-         <div class="dropdown show" style=>
-            <a class="btn btn-primary dropdown-toggle" href="#" role="button"  id="dropmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" background-color: #0059A9 !important; border-color: #0059A9 !important;">
-              Sibel Özden
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#"><i class="fa fa-fw fa-user"></i> Hesabım</a>
-              <a class="dropdown-item" href="#"><i class="fa fa-fw fa-cog"></i> Ayarlar</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="login.html"><i class="fa fa-fw fa-sign-out"></i> Çıkış</a>
-            </div>
-          </div>
-        </li>
-      </ul>
     </div>
   </nav>
-
   
   <div class="content-wrapper" style="padding-top: 0px !important;">
       <!-- Example DataTables Card-->
@@ -169,7 +164,7 @@
             <option>Bayan</option>
           </select>
         </div>
-        <button type="submit" class="btn btn-warning">Bilgileri Güncelle</button>
+        <button type="submit" class="btn btn-info">Bilgileri Güncelle</button>
       </form>
     </div>
   </div>
@@ -193,15 +188,15 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Çıkış yapmak mı istiyorsunuz?</h5>
             <button class="close" type="button" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button>
           </div>
-          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-body">Mevcut oturumunuzu sonlandırmak için "Çıkış" seçeneğini seçiniz.</div>
           <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="login.html">Logout</a>
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Vazgeç</button>
+            <a class="btn btn-primary" href="login.html">Çıkış</a>
           </div>
         </div>
       </div>

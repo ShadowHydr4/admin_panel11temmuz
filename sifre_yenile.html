@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -40,26 +39,30 @@
         </div>
 
         <form class="login100-form validate-form">
-          <span class="login100-form-title text-center" style="width:300px; font-size: 18px;">      
-            <h3 style="font-weight: bold;">Şifrenizi mi unuttunuz?</h3> <br>
-             Sisteme kayıtlı olan e-mail adresinizi giriniz.
+          <span class="login100-form-title" style="width:300px;">
+            <h3 style="font-weight: bold;">Şifre Yenile </h3>
           </span>
-          
-          
 
-          <div class="wrap-input100 validate-input " data-validate = "Email yanlış girdiniz 'xyz@xyz.com' şeklinde olmalıdır.">
-            <input class="input100" type="text" name="email" placeholder="e-mail">
+          <div class="wrap-input100 validate-input" data-validate = "Şifre Gerekli">
+            <input class="input100" type="password" name="pass" placeholder="Şifre">
             <span class="focus-input100"></span>
             <span class="symbol-input100">
-              <i class="fa fa-at" aria-hidden="true"></i>
+              <i class="fa fa-lock" aria-hidden="true"></i>
             </span>
           </div>
 
+          <div class="wrap-input100 validate-input" data-validate = "Yukarıdaki Şifre ile uyumlu değil">
+            <input class="input100" type="password" name="pass" placeholder="Şifre Tekrar">
+            <span class="focus-input100"></span>
+            <span class="symbol-input100">
+              <i class="fa fa-lock" aria-hidden="true"></i>
+            </span>
+          </div>
           
           <div class="container-login100-form-btn">
-            <a class="login100-form-btn" href="sifre_yenile.html">
-              Gönder
-            </a>
+            <button class="login100-form-btn">
+              Şifreyi Güncelle
+            </button>
           </div>
 
           <div class="text-center p-t-12">
