@@ -24,3 +24,5 @@ data-toggle="modal" data-target="#exampleModal"
 ```
 
 ## Uyarı Mesajları için https://getbootstrap.com/docs/4.1/components/alerts/
+
+## table row toggle -- bulk status indicator https://codepen.io/Yeswanth-JG/pen/gKOPda
