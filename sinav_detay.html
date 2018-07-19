@@ -135,14 +135,14 @@
       <ul class="tab-menu">
         <li class="current"><a href="#tab1">Sınavlarım</a></li>
         <li><a href="#tab2">Rastgele Soru Çek</a></li>
-        <li><a href="#tab3">Soru Onay</a></li>
+        <li><a href="#tab3">Sınav Çıktısı</a></li>
       </ul>
 
       <div class="tab-container">
         <div id="tab1" class="tab-content">
           <div class="container mb-4">
             <div class="row">
-              <div class="col-md-9 mx-auto form-area">    
+              <div class="col-md-10 mx-auto form-area">    
                 <div class="table-responsive">
                   <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0" style="border-collapse:collapse;">
                     <thead>
@@ -155,6 +155,7 @@
                         <th data-sortable="false">Sınav Salonu</th>
                         <th data-sortable="false">Oluşturma Tarihi</th>
                         <th data-sortable="false">Detay</th>
+                        <th data-sortable="false">Sınav Sonuç Listesi</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -167,6 +168,7 @@
                         <td>Derslik 5</td>
                         <td>07.11.2018</td>
                         <td><a href="detay.html" class="btn btn-info" data-toggle="collapse" data-target="#demo1" class="accordion-toggle">Detay</a></td>
+                        <td><a href="sinav_sonuc_liste.html" class="btn btn-success">Gör</a></td>
                         <tr>
                           <td colspan="6" class="hiddenRow"><div class="accordian-body collapse" id="demo1">
                             <div class="container">
@@ -197,10 +199,9 @@
                              </div>
                            </div>
                          </div>
-
-                          </div> </td>
-                        </tr>
-                      </tr>
+                       </td>
+                       </tr>
+                       </tr>
                     </tbody>
                   </table>
                 </div>
@@ -211,29 +212,29 @@
         <div id="tab2" class="tab-content">
           <div class="container mb-4">
             <div class="row">
-              <div class="col-md-7 mx-auto form-area">    
-                <form class="my-4">
-                  <div class="form-group">        
-                    <label for="">TC.No</label>
-                        <input type="text" class="form-control" id="" aria-describedby="emailHelp">
-                        <small id="emailHelp" class="form-text text-muted">(000-000-000-00) Tc Kimlik no</small>        
-                  </div>
-                  <div class="form-group">
-                    <label for="">Adı</label><input type="text" class="form-control" id="exampleInputEmail1">
-                  </div>
-                  <div class="form-group">
-                    <label for="" class="">Soyadı</label>
-                    <input type="text" class="form-control" id="">
-                  </div>
-                   <div class="form-group">
-                    <label for="">Cinsiyet</label>
-                    <select class="form-control">
-                      <option>Bay</option>
-                      <option>Bayan</option>
-                    </select>
-                  </div>
-                  <button type="submit" class="btn btn-primary">İleri</button>
-                </form>
+              <div class="col-md-9 mx-auto form-area">    
+                <div class="table-responsive">
+                  <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0" style="border-collapse:collapse;">
+                    <thead>
+                      <tr>
+                        <th>Soru Sıra</th>
+                        <th data-sortable="false">Soru</th>
+                        <th data-sortable="false">Zorluk Derecesi</th>
+                        <th data-sortable="false"></th>
+                        <th data-sortable="false"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Web Tasarım</td>
+                        <td>Orta</td>
+                        <td><a href="#" class="btn btn-success">Onayla</a></td>
+                        <td><a href="#" class="btn btn-danger">Reddet</a></td>
+                       </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div> 
