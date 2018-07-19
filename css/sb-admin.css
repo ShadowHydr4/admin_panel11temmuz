@@ -579,3 +579,22 @@ footer.sticky-footer {
   color:#f8f9fa !important;
  }
 }
+.table {
+  border: 2px solid #eeeeee !important;
+}
+.table tr {
+    cursor: pointer !important;
+}
+.hiddenRow {
+    padding: 0 8px !important;
+    font-size: 14px;
+    width: 100%;
+}
+
+.collapse.show {
+    margin-top: 5px !important;
+}
+.row {
+   margin-top: 5px !important;
+}
+
