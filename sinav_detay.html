@@ -23,7 +23,7 @@
 <body class="fixed-nav sticky-footer bg-light" id="page-top">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav" style="background-color: #0059A9 !important;">
-    <a class="navbar-brand" href="index.html" style="color: white;">Sınav İsmek</a>
+    <a class="navbar-brand" href="index.html" style="color: white;">İsmek Online Sınav Sistemi</a>
     <div class="dropdown show saga-yasla">
       <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" background-color: #0059A9 !important; border-color: #0059A9 !important; float: right">
         Sibel Özden
@@ -87,7 +87,7 @@
               <a href="sinav_liste.html">Sınav Listeleme</a>
             </li>
             <li>
-              <a href="sinav_olustur.html">Sınav Oluştur</a>
+              <a href="sinav_detay.html">Sınav Detay</a>
             </li>
           </ul>
         </li>
@@ -133,40 +133,77 @@
     <div class="container">
   
       <ul class="tab-menu">
-        <li class="current"><a href="#tab1">Sınav Oluştur</a></li>
+        <li class="current"><a href="#tab1">Sınavlarım</a></li>
         <li><a href="#tab2">Rastgele Soru Çek</a></li>
         <li><a href="#tab3">Soru Onay</a></li>
-        <li><a href="#tab4">Sınav Onay</a></li>
-        <li><a href="#tab5">Sınav Çıktısı</a></li>
       </ul>
 
       <div class="tab-container">
         <div id="tab1" class="tab-content">
           <div class="container mb-4">
             <div class="row">
-              <div class="col-md-7 mx-auto form-area">    
-                <form class="my-4">
-                  <div class="form-group">        
-                    <label for="">TC.No</label>
-                        <input type="text" class="form-control" id="" aria-describedby="emailHelp">
-                        <small id="emailHelp" class="form-text text-muted">(000-000-000-00) Tc Kimlik no</small>        
-                  </div>
-                  <div class="form-group">
-                    <label for="">Adı</label><input type="text" class="form-control" id="exampleInputEmail1">
-                  </div>
-                  <div class="form-group">
-                    <label for="" class="">Soyadı</label>
-                    <input type="text" class="form-control" id="">
-                  </div>
-                   <div class="form-group">
-                    <label for="">Cinsiyet</label>
-                    <select class="form-control">
-                      <option>Bay</option>
-                      <option>Bayan</option>
-                    </select>
-                  </div>
-                  <button type="submit" class="btn btn-primary">İleri</button>
-                </form>
+              <div class="col-md-9 mx-auto form-area">    
+                <div class="table-responsive">
+                  <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0" style="border-collapse:collapse;">
+                    <thead>
+                      <tr>
+                        <th>Sınav Sıra</th>
+                        <th data-sortable="false">Branş Adı</th>
+                        <th data-sortable="false">Sınav Kodu</th>
+                        <th data-sortable="false">Başlangıç Saati</th>
+                        <th data-sortable="false">Sınav Süresi</th>
+                        <th data-sortable="false">Sınav Salonu</th>
+                        <th data-sortable="false">Oluşturma Tarihi</th>
+                        <th data-sortable="false">Detay</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Web Tasarım</td>
+                        <td>05498852</td>
+                        <td>08.00</td>
+                        <td>02.00</td>
+                        <td>Derslik 5</td>
+                        <td>07.11.2018</td>
+                        <td><a href="detay.html" class="btn btn-info" data-toggle="collapse" data-target="#demo1" class="accordion-toggle">Detay</a></td>
+                        <tr>
+                          <td colspan="6" class="hiddenRow"><div class="accordian-body collapse" id="demo1">
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-md-9 mx-auto form-area">
+                                  <form action="" method="" class="form-group">
+                                    <div class="row">
+                                      <label class="col-md-4" for="">Soru Sayısı</label>
+                                      <input type="text" class="form-control col-md-8" id="exampleInputEmail1">
+                                    </div>
+                                    <div class="row">
+                                      <label class="col-md-4" for="">Kolay</label>
+                                      <input type="text" class="form-control col-md-8" id="exampleInputEmail2">
+                                    </div>
+                                    <div class="row">
+                                      <label class="col-md-4" for="">Orta</label>
+                                      <input type="text" class="form-control col-md-8" id="exampleInputEmail3">
+                                    </div>
+                                    <div class="row">
+                                      <label class="col-md-4" for="">Zor</label>
+                                      <input type="text" class="form-control col-md-8" id="exampleInputEmail3">
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-8"></div>
+                                      <a href="#" class="btn btn-success col-md-4" width="100%"> Onayla</a>   
+                                    </div>
+                               </form>
+                             </div>
+                           </div>
+                         </div>
+
+                          </div> </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div> 
@@ -223,51 +260,6 @@
                     </select>
                   </div>
                   <button type="submit" class="btn btn-primary">İleri</button>
-                </form>
-              </div>
-            </div>
-          </div> 
-        </div>
-        <div id="tab4" class="tab-content">
-          <div class="container mb-4">
-            <div class="row">
-              <div class="col-md-7 mx-auto form-area">    
-                <form class="my-4">
-                  <div class="form-group">        
-                    <label for="">TC.No</label>
-                        <input type="text" class="form-control" id="" aria-describedby="emailHelp">
-                        <small id="emailHelp" class="form-text text-muted">(000-000-000-00) Tc Kimlik no</small>        
-                  </div>
-                  <div class="form-group">
-                    <label for="">Adı</label><input type="text" class="form-control" id="exampleInputEmail1">
-                  </div>
-                  <div class="form-group">
-                    <label for="" class="">Soyadı</label>
-                    <input type="text" class="form-control" id="">
-                  </div>                  
-                   <div class="form-group">
-                    <label for="">Cinsiyet</label>
-                    <select class="form-control">
-                      <option>Bay</option>
-                      <option>Bayan</option>
-                    </select>
-                  </div>
-                  <button type="submit" class="btn btn-primary">İleri</button>
-                </form>
-              </div>
-            </div>
-          </div> 
-        </div>
-        <div id="tab5" class="tab-content">
-          <div class="container mb-4">
-            <div class="row">
-              <div class="col-md-7 mx-auto form-area">    
-                <form class="my-4">
-                  <div class="form-group">
-                    <label for="">Adı</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1">
-                  </div>
-                  <button type="submit" class="btn btn-primary">Bitir </button>
                 </form>
               </div>
             </div>
