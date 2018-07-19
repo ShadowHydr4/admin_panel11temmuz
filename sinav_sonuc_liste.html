@@ -122,58 +122,85 @@
     </div>
   </nav>
   
-  <!-- Content-->
+  <!-- Content -->
   <div class="content-wrapper" style="padding-top: 0px !important;">
-      <!-- Content-->
-      <div class="card mb-3">
-        <div class="card-header">
-          <i class="fa fa-list"></i> Sınav Listeleme</div>
-        <div class="card-body">
-          <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-              <thead>
-                <tr>
-                  <th>Sınav Tarihi</th>
-                  <th data-sortable="false">Sınav Adı</th>
-                  <th data-sortable="false">Sınav Kodu</th>
-                  <th data-sortable="false">Branş Adı</th>
-                  <th data-sortable="false">Başlangıç Saati</th>
-                  <th data-sortable="false">Sınav Süresi</th>
-                  <th data-sortable="false">Sınav Salonu</th>
-                  <th data-sortable="false">Oluşturma Tarihi</th>
-                  <th data-sortable="false">Katkı Yüzdesi</th>
-                  <th data-sortable="false">Öğretmen</th>
-                  <th data-sortable="false">Aktif</th>
-                  <th data-sortable="false">Öğrenci Ata</th>
-                  <th data-sortable="false">Güncelle</th>
-                  <th data-sortable="false">Sil</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>13.07.2018</td>
-                  <td>Tasarım</td>
-                  <td>05498852</td>
-                  <td>Web</td>
-                  <td>08.00</td>
-                  <td>02.00</td>
-                  <td>Derslik 5</td>
-                  <td>07.11.2018</td>
-                  <td>%10</td>
-                  <td>Sibel Özden</td>
-                  <td><input type="checkbox"> Evet</td>
-                  <td><a href="#" class="btn btn-info">Öğrenci Ata</a></td>
-                  <td><a href="kullanici_guncelle.html" class="btn btn-success">Güncelle</a></td>
-                  <td><a href="" class="btn btn-danger">Sil</a></td>
-                </tr>
-              </tbody>
-            </table>
+      <!-- -->
+    <div class="card mb-3">
+      <div class="card-header">
+        <i class="fa fa-file"></i> Sınav Oluştur</div>
+    </div>
+
+    <div class="container">
+          <div class="container mb-4">
+            <div class="row">
+              <div class="col-md-10 mx-auto form-area">    
+                <div class="table-responsive">
+                  <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0" style="border-collapse:collapse;">
+                    <thead>
+                      <tr>
+                        <th>Sınav Sıra</th>
+                        <th data-sortable="false">Tc No.</th>
+                        <th data-sortable="false">Ad Soyad</th>
+                        <th data-sortable="false">Doğru Sayısı</th>
+                        <th data-sortable="false">Yanlış Sayısı</th>
+                        <th data-sortable="false">Boş Sayısı</th>
+                        <th data-sortable="false">Mülakat Notu</th>
+                        <th data-sortable="false">Sonuç</th>
+                        <th data-sortable="false">Başarı Durum</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>11521584615</td>
+                        <td>Sibel Özden</td>
+                        <td>15</td>
+                        <td>03</td>
+                        <td>02</td>
+                        <td><a href="$" class="btn btn-info" data-toggle="collapse" data-target="#demo1" class="accordion-toggle">Gir</a></td>
+                        <td>70</td>
+                        <td>5</td>
+                        <tr>
+                          <td colspan="6" class="hiddenRow"><div class="accordian-body collapse" id="demo1">
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-md-12 mx-auto form-area">
+                                  <form action="" method="" class="form-group">
+                                    <h4 class="text-center" style="font-size: 30px; font-weight: 200; margin-bottom: 15px !important;">Mülakat Sonuçları</h4>
+                                    <div class="row">
+                                      <label class="col-md-4" for="">İsmek Hakkında Ne Düşünüyorsunuz? </label>
+                                      <input type="text" class="form-control col-md-8" id="exampleInputEmail1">
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-6"></div>
+                                      <label class="col-md-4" style="font-size: 18.5px;" for="">Mülakat Puanı</label>
+                                      <input type="text" class="form-control col-md-2" id="exampleInputEmail1">
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-8"></div>
+                                      <a href="#" class="btn btn-success col-md-4" width="100%"> Onayla</a>   
+                                    </div>
+                               </form>
+                             </div>
+                           </div>
+                         </div>
+
+                          </div> </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- /.container-fluid-->
-    <!-- /.content-wrapper-->
+  <!-- Form -->
+
+  <!-- Form End -->
+  
+    <!-- -->
+    
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
@@ -217,7 +244,18 @@
     <!-- Custom scripts for this page-->
     <script src="js/sb-admin-datatables.min.js"></script>
     <script src="js/sb-admin-charts.min.js"></script>
-  </div>
-</body>
+    <script>
+      $(document).ready(function() {
+        $(".tab-menu a").click(function(event) {
+          event.preventDefault();
+          $(this).parent().addClass("current");
+          $(this).parent().siblings().removeClass("current");
+          var tab = $(this).attr("href");
+          $(".tab-content").not(tab).css("display", "none");
+          $(tab).fadeIn();
+        });
+      });
+    </script>
 
+</body>
 </html>
