@@ -28,7 +28,7 @@
     list-style: none;
     padding: 0;
     position: relative;
-    max-width: 600px;
+    max-width: 450px;
     margin: 20px auto 26px;
     border: none;
     z-index:0;
@@ -54,10 +54,11 @@
 }
 .process-model li {
     display: inline-block;
-    width: 18%;
+    width:27%;
     text-align: center;
     float: none;
 }
+
 .nav-tabs.process-model > li.active > a, .nav-tabs.process-model > li.active > a:hover, .nav-tabs.process-model > li.active > a:focus, .process-model li a:hover, .process-model li a:focus {
     border: none;
     background: transparent;
@@ -149,6 +150,13 @@
     }
 }
 
-
-
 .tabb-content>.tabb-pane{display:none}.tabb-content>.active{display:block}
+
+
+.wizard .nav-tabs > li.active > a, .wizard .nav-tabs > li.active > a:hover, .wizard .nav-tabs > li.active > a:focus {
+    color: #555555;
+    cursor: default;
+    border: 0;
+    border-bottom-color: transparent;
+}
+
