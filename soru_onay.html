@@ -136,32 +136,57 @@
     </div>
   </nav>
   
-  <!-- Content -->
+  <!-- Content-->
   <div class="content-wrapper" style="padding-top: 0px !important;">
-      <!-- -->
-  <div class="card mb-3">
-    <div class="card-header">
-      <i class="fa fa-file"></i> Mülakat Soru Güncelle</div>
-  </div>
-<!-- Form -->
-<div class="container mb-4">
-  <div class="row">
-    <div class="col-md-7 mx-auto form-area">    
-      <form class="my-4">
-        <div class="form-group">
-          <label for="">Soru</label>
-          <textarea cols="80" rows="10" id="content" name="content"></textarea>
+      <!-- Content-->
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-check-square"></i> Soru Onay</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Branş Adı</th>
+                  <th data-sortable="false">Zorluk Seviyesi</th>
+                  <th data-sortable="false">Eklenme Tarihi</th>
+                  <th data-sortable="false"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Web Tasarım</td>
+                  <td>Orta</td>
+                  <td>03.04.2018</td>
+                  <td><a href="#" class="btn btn-success" data-toggle="collapse" data-target="#demo1" class="accordion-toggle">İncele</a></td>
+                  <tr>
+                  <td colspan="6" class="hiddenRow"><div class="accordian-body collapse" id="demo1">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-9 mx-auto form-area">
+                          <form action="" method="" class="form-group">
+                            <div class="row">
+                              <textarea class="form-control col" id="exampleInputEmail1" name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-10"></div>
+                              <a href="#" class="btn btn-success col-md-2 mt-2" width="100%"> Onayla</a>   
+                            </div>
+                       </form>
+                     </div>
+                   </div>
+                 </div>
+                </td>
+                </tr>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-      
-        <button type="submit" class="btn btn-info">Güncelle</button>
-      </form>
+      </div>
     </div>
-  </div>
-</div>      
-<!-- Form End -->
-  </div>
-    <!-- -->
-    
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
@@ -205,11 +230,7 @@
     <!-- Custom scripts for this page-->
     <script src="js/sb-admin-datatables.min.js"></script>
     <script src="js/sb-admin-charts.min.js"></script>
-    <script src="ckeditor/ckeditor.js"></script>
-    <script type="text/javascript">
-    	CKEDITOR.replace('content');
-    </script>
-
+  </div>
 </body>
 
 </html>

@@ -24,9 +24,20 @@
 
 <body class="fixed-nav sticky-footer bg-light" id="page-top">
   <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav" style="background-color: #0059A9 !important;">
+ <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav" style="background-color: #0059A9 !important;">
     <a class="navbar-brand" href="index.html" style="color: white;">İsmek Online Sınav Sistemi</a>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="dropdown show saga-yasla">
+      <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" background-color: #0059A9 !important; border-color: #0059A9 !important; float: right">
+        Sibel Özden
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#"><i class="fa fa-fw fa-user"></i> Hesabım</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-fw fa-cog"></i> Ayarlar</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal" href="login.html"><i class="fa fa-fw fa-sign-out"></i> Çıkış</a>
+      </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22" style="color: white;"></path></svg>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -61,7 +72,7 @@
               <a href="brans_olustur.html">Branş Oluştur</a>
             </li>
             <li>
-              <a href="kullanici_liste.html">Branş Listeleme</a>
+              <a href="brans_liste.html">Branş Listeleme</a>
             </li>
           </ul>
         </li>
@@ -78,16 +89,30 @@
               <a href="sinav_liste.html">Sınav Listeleme</a>
             </li>
             <li>
-              <a href="sinav_olustur.html">Sınav Oluştur</a>
+              <a href="sinav_detay.html">Sınav Detay</a>
             </li>
           </ul>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Sınav İşlemleri">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti4" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-window-restore"></i>
+            <span class="nav-link-text">Soru Bankası</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseMulti4">
+            <li>
+              <a href="soru_ekle.html">Soru Ekle</a>
+            </li>
+            <li>
+              <a href="soru_liste.html">Soru Listeleme</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Sınav İşlemleri">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti5" data-parent="#exampleAccordion">
             <i class="fa fa-fw fa-edit"></i>
             <span class="nav-link-text">Mulakat İşlemleri</span>
           </a>
-          <ul class="sidenav-second-level collapse" id="collapseMulti4">
+          <ul class="sidenav-second-level collapse" id="collapseMulti5">
             <li>
               <a href="mulakat_soru_ekle.html">Mulakat Soru Ekleme</a>
             </li>
@@ -108,21 +133,6 @@
           <a class="nav-link text-center" id="sidenavToggler">
             <i class="fa fa-fw fa-angle-left"></i>
           </a>
-        </li>
-      </ul>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-         <div class="dropdown show">
-            <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" background-color: #0059A9 !important; border-color: #0059A9 !important;">
-              Sibel Özden
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#"><i class="fa fa-fw fa-user"></i> Hesabım</a>
-              <a class="dropdown-item" href="#"><i class="fa fa-fw fa-cog"></i> Ayarlar</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal" href="login.html"><i class="fa fa-fw fa-sign-out"></i> Çıkış</a>
-            </div>
-          </div>
         </li>
       </ul>
     </div>

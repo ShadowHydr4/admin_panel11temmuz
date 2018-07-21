@@ -135,13 +135,12 @@
       </ul>
     </div>
   </nav>
-  
   <!-- Content -->
   <div class="content-wrapper" style="padding-top: 0px !important;">
       <!-- -->
   <div class="card mb-3">
     <div class="card-header">
-      <i class="fa fa-file"></i> Mülakat Soru Güncelle</div>
+      <i class="fa fa-edit"></i> Sınav Güncelle</div>
   </div>
 <!-- Form -->
 <div class="container mb-4">
@@ -149,11 +148,63 @@
     <div class="col-md-7 mx-auto form-area">    
       <form class="my-4">
         <div class="form-group">
-          <label for="">Soru</label>
-          <textarea cols="80" rows="10" id="content" name="content"></textarea>
+          <label for="">Sınav Adı</label>
+          <input type="text" class="form-control" id="exampleInputEmail1">
         </div>
-      
-        <button type="submit" class="btn btn-info">Güncelle</button>
+        <div class="form-group">
+          <label for="">Sınav Kodu</label>
+          <input type="text" class="form-control" id="exampleInputEmail1">
+        </div>
+        <div class="form-group">
+          <label for="">Branş Adı</label>
+          <select class="form-control">
+            <option>Web Tasarım</option>
+            <option>Dijital Pazarlama</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="">Sınav Tarihi</label>
+          <input type="date" class="form-control" id="exampleInputEmail1">
+        </div>
+        <div class="form-group">
+          <label for="" class="">Başlangıç Saati</label>
+          <input type="time" class="form-control" id="">
+        </div>
+        <div class="form-group">
+          <label for="" class="">Sınav Süresi</label>
+          <input type="time" class="form-control" id="">
+        </div>
+        <div class="form-group">
+          <label for="">Sınav Salonu</label>
+          <select class="form-control">
+            <option>Derslik 1</option>
+            <option>Derslik 2</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="" class="">Katkı Yüzdesi</label>
+          <input type="text" class="form-control" id="">
+        </div>
+        <div class="form-group">
+          <label for="">Öğretmen</label>
+          <select class="form-control">
+            <option>Sibel Özden</option>
+            <option>Yahya Can</option>
+          </select>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-2"> Aktif Mi </div>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Evet
+                </label>
+              </div>
+            </div>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Bilgileri Güncelle</button>
       </form>
     </div>
   </div>
@@ -205,10 +256,6 @@
     <!-- Custom scripts for this page-->
     <script src="js/sb-admin-datatables.min.js"></script>
     <script src="js/sb-admin-charts.min.js"></script>
-    <script src="ckeditor/ckeditor.js"></script>
-    <script type="text/javascript">
-    	CKEDITOR.replace('content');
-    </script>
 
 </body>
 

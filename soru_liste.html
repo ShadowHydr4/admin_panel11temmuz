@@ -23,7 +23,7 @@
 <body class="fixed-nav sticky-footer bg-light" id="page-top">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav" style="background-color: #0059A9 !important;">
-    <a class="navbar-brand" href="index.html" style="color: white;">Sınav İsmek</a>
+    <a class="navbar-brand" href="index.html" style="color: white;">İsmek Online Sınav Sistemi</a>
     <div class="dropdown show saga-yasla">
       <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" background-color: #0059A9 !important; border-color: #0059A9 !important; float: right">
         Sibel Özden
@@ -87,16 +87,30 @@
               <a href="sinav_liste.html">Sınav Listeleme</a>
             </li>
             <li>
-              <a href="sinav_olustur.html">Sınav Oluştur</a>
+              <a href="sinav_detay.html">Sınav Detay</a>
             </li>
           </ul>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Sınav İşlemleri">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti4" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-window-restore"></i>
+            <span class="nav-link-text">Soru Bankası</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseMulti4">
+            <li>
+              <a href="soru_ekle.html">Soru Ekle</a>
+            </li>
+            <li>
+              <a href="soru_liste.html">Soru Listeleme</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Sınav İşlemleri">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti5" data-parent="#exampleAccordion">
             <i class="fa fa-fw fa-edit"></i>
             <span class="nav-link-text">Mulakat İşlemleri</span>
           </a>
-          <ul class="sidenav-second-level collapse" id="collapseMulti4">
+          <ul class="sidenav-second-level collapse" id="collapseMulti5">
             <li>
               <a href="mulakat_soru_ekle.html">Mulakat Soru Ekleme</a>
             </li>
@@ -121,14 +135,13 @@
       </ul>
     </div>
   </nav>
-
   
   <!-- Content-->
   <div class="content-wrapper" style="padding-top: 0px !important;">
       <!-- Content-->
       <div class="card mb-3">
         <div class="card-header">
-          <i class="fa fa-list"></i> Soru Listeleme</div>
+          <i class="fa fa-list"></i> Soru Listeleme  | <i class="fa fa-check-square"></i> <a href="soru_onay.html" class="" style="font: bold; font-size: 16px; font-weight: 600;">Onay Bekleyenler 10</a></div>
         <div class="card-body">
           <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -149,14 +162,11 @@
                 <tr>
                   <td>Web Tasarım</td>
                   <td>Soru</td>
-				   <td>4</td>
+				          <td>4</td>
                   <td>C</td>
-				   <td>10</td>
+				          <td>10</td>
                   <td>Orta</td>
                   <td>03.04.2018</td>
-                 
-                 
-                 
                   <td><a href="soru_guncelle.html" class="btn btn-success">Güncelle</a></td>
                   <td><a href="" class="btn btn-danger">Sil</a></td>
                 </tr>
